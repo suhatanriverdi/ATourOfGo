@@ -1,13 +1,17 @@
 package main
 
 import (
-	"a-tour-of-go/basics"
+	// a-tour-of-go is a module/project
+	"a-tour-of-go/basics" // This is a package/folder
 	"fmt"
+	"math"
 	"math/rand"
 )
 
 func main() {
 	fmt.Println("Genesis Corp MAIN")
+
+	// Call the HelloGenesisCorp function from the basics package
 	basics.HelloGenesisCorp()
 
 	for {
@@ -17,4 +21,6 @@ func main() {
 			break
 		}
 	}
+
+	fmt.Printf("My name is: %g \n", math.Sqrt(7))
 }
