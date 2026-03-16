@@ -3,6 +3,7 @@ package basics
 import (
 	"fmt"
 	"math"
+	"math/big"
 	"math/cmplx"
 
 	"reflect"
@@ -74,9 +75,9 @@ func Basics() {
 
 	var i int
 	var f float64
-	var b bool
+	var bb bool
 	var s string
-	fmt.Printf("%v %v %v %q\n", i, f, b, s)
+	fmt.Printf("%v %v %v %q\n", i, f, bb, s)
 
 	// Type Conversion
 	fmt.Println()
@@ -123,7 +124,8 @@ func Basics() {
 	fmt.Println(needInt(Small))
 	// Overflow
 	// fmt.Println(needInt(Big))
-	fmt.Println(string(Big))
+	bigInt := new(big.Int).Lsh(big.NewInt(1), 100)
+	fmt.Println(bigInt.String())
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
 

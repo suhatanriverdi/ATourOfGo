@@ -2,7 +2,9 @@ package main
 
 import (
 	// a-tour-of-go is a module/project
-	"a-tour-of-go/basics" // This is a package/folder
+	// "a-tour-of-go/basics" // This is a package/folder
+	"a-tour-of-go/flow_control_statements"
+
 	"fmt"
 )
 
@@ -29,7 +31,13 @@ func main() {
 
 	// Call the HelloGenesisCorp function from the basics package
 	// "H" the capital letter means exported
-	basics.Basics()
+	// basics.Basics()
+
+	// Call the Flows function from the flow_control_statements package
+	// flow_control_statements.Flows()
+	n := flow_control_statements.DeferStatement()
+	fmt.Println(n)
+	// flow_control_statements.SqrtExercise()
 
 	// // %v can be used for everything
 	// fmt.Printf("My name is: %v %v \n", math.Sqrt(7), "Gen")

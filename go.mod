@@ -1,3 +1,4 @@
+// Can be different from the upper-most folder name
 module a-tour-of-go
 
 go 1.26.1
